@@ -11,22 +11,23 @@ span{
 body{
     overflow-x: hidden;
     font-family: 'Roboto';
-    background: rgb(41,252,154);
-    background: linear-gradient(277deg, rgb(133, 235, 187) 0%, rgba(85, 150, 106, 0.583) 36%, rgba(142, 243, 157, 0.342) 72%, rgba(161, 236, 216, 0.995) 100%);
+    background-image: url('/img/To_Do_List.webp');
+    background-repeat: no-repeat;
+    background-position: right 0px;
 }
 
 h1{
     display: flex;
     justify-content: center;
-    font-size: 48px;
-    color: rgb(7, 7, 7);
+    font-size: 64px;
+    color: #256814;
+    text-shadow: 1px 1px 2px black, 0 0 25px #57a743, 0 0 5px #57a743;
 }
 
 .header{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100vw;
 }
 input{
     width: 30%;
@@ -47,7 +48,7 @@ span.inputBtn{
     width: 10%;
     display: flex;
     justify-content: center;
-    font-weight: 600;
+    font-weight: 700;
     color: #080808;
     padding: 8px 0;
     background-color: #4ead37;
@@ -67,20 +68,32 @@ span.inputBtn{
     cursor: pointer;
     width: 50vw;
     border-radius: 20px;
+    font-size: 24px;
+    font-weight: 700;
 }
 
 .my__list li:hover{
-    background-color: #d3fd9d;
+    background: rgb(183,245,93);
+    background: radial-gradient(circle, rgba(183,245,93,0.5102415966386555) 0%, rgba(140,236,76,0.5998774509803921) 100%);
     font-weight: 600;
     color: #176e02;
     transition: all 0.4s;
 }
 
 ul li.checked {
-    background: #888;
-    color: #fff;
+    background: rgb(190,194,183);
+    background: radial-gradient(circle, rgba(190,194,183,0.5102415966386555) 0%, rgb(176, 179, 175) 100%);
     text-decoration: line-through;
 }
+
+span.close {
+    float: right;
+    font-weight: 700;
+    font-size: 26px;
+    color: #080808;
+}
+
+
 
 
 
