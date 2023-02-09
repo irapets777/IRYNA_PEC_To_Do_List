@@ -9,6 +9,7 @@ span{
     padding: 0;
 }
 body{
+    overflow-x: hidden;
     font-family: 'Roboto';
     background: rgb(41,252,154);
     background: linear-gradient(277deg, rgb(133, 235, 187) 0%, rgba(85, 150, 106, 0.583) 36%, rgba(142, 243, 157, 0.342) 72%, rgba(161, 236, 216, 0.995) 100%);
@@ -47,9 +48,9 @@ span.inputBtn{
     display: flex;
     justify-content: center;
     font-weight: 600;
-    color: #464545;
+    color: #080808;
     padding: 8px 0;
-    background-color: #fd9ff5;
+    background-color: #4ead37;
     border-radius: 0 10px 10px 0; 
 
 }
@@ -57,24 +58,33 @@ span.inputBtn{
 .my__list{
     display: flex;
     justify-content: center;
-   
 }
 
-.my__list ul li{
-    margin: 0 auto;
+.my__list li{
     padding: 20px;
-    background: rgb(63,215,251);
-    background: radial-gradient(circle, rgba(63,215,251,0.5298494397759104) 0%, rgba(222,70,252,0.4514180672268907) 100%);
+    background: rgb(41,252,154);
+    background: linear-gradient(277deg, rgb(133, 235, 187) 0%, rgba(132, 226, 162, 0.583) 36%, rgba(142, 243, 157, 0.342) 72%, rgba(161, 236, 216, 0.995) 100%);
     cursor: pointer;
     width: 50vw;
     border-radius: 20px;
 }
 
-.my__list ul li:hover{
-    background-color: #beb8b8;
+.my__list li:hover{
+    background-color: #d3fd9d;
     font-weight: 600;
-    color: #b30da5;
-    transition: all 0.8s;
+    color: #176e02;
+    transition: all 0.4s;
 }
+
+ul li.checked {
+    background: #888;
+    color: #fff;
+    text-decoration: line-through;
+}
+
+
+
+
+
 
 
